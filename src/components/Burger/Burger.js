@@ -4,7 +4,7 @@ import BurgerIngrediant from './BurgerIngrediants/BurgerIngrediants';
 
 
 const burger = (props) => {
-
+console.log(props);
     let transformefIngredients = Object.keys(props.ingredients).map(igkey => {
          return [...Array(props.ingredients[igkey])].map((_,i) => {
              return <BurgerIngrediant key={igkey + i} type={igkey}/>
@@ -33,4 +33,4 @@ const burger = (props) => {
     );
 }
 
-export default burger;
+export default  burger;
